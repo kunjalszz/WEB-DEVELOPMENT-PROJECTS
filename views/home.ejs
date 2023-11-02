@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+<ul>
+  <% for (let post of posts) { %>
+    <li>
+      <h2><%= post.title %></h2>
+      <p><%= post.content %></p>
+    </li>
+  <% } %>
+</ul>
+<a href="/create">Create a new post</a>
+<%- include('partials/footer') %>
